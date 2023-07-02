@@ -15,11 +15,14 @@ section#home--main div.businesscard{
     border: solid 1px #a5a5a5;
     padding: 20px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-    font-family: 'Karla', sans-serif
+    font-family: 'Karla', sans-serif;
+    border-radius: 3px;
+    background-color: #ebebeb
 }
 
 section#home--main div.businesscard h2{
     color: #3318ce;
+    text-shadow:  black;
 }
 
 section#home--main div.businesscard h3{
