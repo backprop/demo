@@ -4,11 +4,6 @@ import {Outlet,NavLink} from "react-router-dom"
 export default function Layout(){    
     const [activeMenuItem, setActiveMenuItem] = React.useState('');
 
-    // Handle menu item click
-    const handleMenuItemClick = (menuItem) => {
-      setActiveMenuItem(menuItem);
-    };
-
     return(
         <div>
             <nav className="nav--menu">
