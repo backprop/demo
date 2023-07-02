@@ -48,12 +48,12 @@ export default function Notes() {
 
     React.useEffect(()=>{
         const timeoutID=setTimeout(()=>{
-            if(tempNoteText!=currentNote.body){ // so that switching notes doesn't update and make chosen note first
+            if(tempNoteText!==currentNote.body){ // so that switching notes doesn't update and make chosen note first
                 updateNote(tempNoteText)
             }            
         },500)
         return ()=>clearTimeout(timeoutID);
-    },[tempNoteText])
+    },[currentNote,tempNoteText])
 
     async function createNewNote() {
         const currDate=Date.now();

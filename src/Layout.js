@@ -2,8 +2,7 @@ import React from "react"
 import {Outlet,NavLink} from "react-router-dom"
 
 export default function Layout(){    
-    const [activeMenuItem, setActiveMenuItem] = React.useState('');
-
+    
     return(
         <div>
             <nav className="nav--menu">
