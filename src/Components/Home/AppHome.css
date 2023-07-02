@@ -7,5 +7,27 @@ section#home--main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;    
    }
+
+section#home--main div.businesscard{
+    width: 500px;
+    border: solid 1px #a5a5a5;
+    padding: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Karla', sans-serif
+}
+
+section#home--main div.businesscard h2{
+    color: #3318ce;
+}
+
+section#home--main div.businesscard h3{
+    color: #3f3f3f;
+}
+
+
+section#home--main div.businesscard img{
+    float:left;
+    margin-right: 20px;
+}
