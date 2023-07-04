@@ -5,8 +5,7 @@ import WeatherForm from "./WeatherForm"
 import apiKey from "./apiKey"
 import axios from "axios"
 
-export default function Weather(){ 
-   
+export default function Weather(){     
     // set weather to an empty struct
     const [weather,setWeather] = React.useState({})
     const [currSearch,setCurrSearch] = React.useState("");
