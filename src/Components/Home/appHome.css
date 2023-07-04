@@ -8,7 +8,7 @@ section#home--main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;    
-   }
+   } 
    
 section#home--main div.businesscard{
     width: 500px;
