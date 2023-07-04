@@ -1,5 +1,5 @@
 import React from "react"
-import "./AppHome.css"
+import "./appHome.css"
 import me from "../../assets/images/photos/me.jpg";
 
 export default function AppHome(){
@@ -9,11 +9,11 @@ export default function AppHome(){
             <p>
                 This is my app where I add a bunch of different demos so that I have a quick reference to many different smaller pieces of React
             </p>
-            <div class="businesscard">
+            <div className="businesscard">
                 <h2>My Contact Info</h2>
                 <img src={me} alt="Chris" />
                 <h3>Chris Polka</h3>
-                <span class="link">
+                <span className="link">
                     <a href="https://www.linkedin.com/in/chris-polka/">LinkedIn</a>
                 </span>
             </div>

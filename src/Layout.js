@@ -7,26 +7,33 @@ export default function Layout(){
         <div>
             <nav className="nav--menu">
                 <NavLink
-                    exact
+                    exact="true"
                     to="/"
                     className="nav--menu-item"
-                    activeClassName="active"
+                    activeclassname="active"
                 >
                     Home
                 </NavLink>
                 <NavLink
                     to="/game"
                     className="nav--menu-item"
-                    activeClassName="active"
+                    activeclassname="active"
                 >
                     Game
                 </NavLink>
                 <NavLink
                     to="/notes"
                     className="nav--menu-item"
-                    activeClassName="active"
+                    activeclassname="active"
                 >
                     Notes
+                </NavLink>
+                <NavLink
+                    to="/weather"
+                    className="nav--menu-item"
+                    activeclassname="active"
+                >
+                    Weather
                 </NavLink>
             </nav>
             <main>

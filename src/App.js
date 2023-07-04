@@ -6,6 +6,7 @@ import AppGame from "./Components/Game/AppGame"
 import Layout from "./Layout"
 
 const AppNotes = lazy(() => import('./Components/Notes/AppNotes'))
+const AppWeather = lazy(() => import('./Components/Weather/AppWeather'))
 
 export default function App() {
     return ( 
@@ -17,6 +18,11 @@ export default function App() {
                     <Route path="notes" element={
                         <Suspense fallback={<div>Loading...</div>}>
                             <AppNotes />
+                        </Suspense>
+                    } />
+                    <Route path="weather" element={
+                        <Suspense fallback={<div>Loading...</div>}>
+                            <AppWeather />
                         </Suspense>
                     } />
                 </Route>

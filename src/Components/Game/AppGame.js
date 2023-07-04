@@ -4,18 +4,7 @@ import {nanoid} from "nanoid"
 import Confetti from "react-confetti"
 import './game.css';
 
-/**
- * Challenge:
- * 
- * - Create a Die component that takes a `value` prop
- * - Render 10 instances of the Die component (manually)
- *      - Provide a number between 1-6 for the value on each
- *        for now
- * - Style the <main> and <Die> components 
- *   to look like they do in the slide
- */
-
-export default function Game() {
+export default function AppGame() {
     const [dice,setDice]=React.useState(allNewDice());
     const [tenzies,setTenzies]=React.useState(false);
 

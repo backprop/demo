@@ -6,7 +6,7 @@ import "./notes.css"
 import {onSnapshot,addDoc,doc,deleteDoc,setDoc} from "firebase/firestore"
 import {notesCollection,db} from "./firebase";
 
-export default function Notes() {
+export default function AppNotes() {
     const [notes, setNotes] = React.useState(
         () => JSON.parse(localStorage.getItem("notes")) || []
     )

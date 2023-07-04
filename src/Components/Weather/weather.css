@@ -1,0 +1,68 @@
+
+section#weather {
+    background-color: #F5F5F5;
+    height: 800px;
+    max-width: 1200px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+    overflow-x: scroll
+   }
+   
+div.weather--container{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+   
+form.weather--form{
+    display:flex;
+    flex-direction: row;   
+    text-align: center;
+}
+
+.weather--form--input{
+    line-height: 30px;
+    font-size: 1.4em;
+}
+
+.weather--form--button{
+    margin-left: 30px;
+    font-size: 1.4em;
+}
+
+
+div.weather--forecast{
+    display:flex;
+    flex-direction: row;    
+}
+   
+div.weather--day{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.weather--day--icon{
+    display:block;
+}
+
+span.weather--day--date{
+    font-size: 1.2em;
+    font-weight: 700;
+    display:block
+}
+
+span.weather--day--max{
+    display:block;
+    color: #a50606;
+}
+
+span.weather--day--min{
+    display:block;
+    color: #0e2486
+}
