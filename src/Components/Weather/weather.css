@@ -8,8 +8,7 @@ section#weather {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;    
-    overflow-x: scroll
+    align-items: center;        
    }
    
 div.weather--container{

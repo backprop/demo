@@ -4,9 +4,11 @@ import WeatherDisplay from "./WeatherDisplay"
 import WeatherForm from "./WeatherForm"
 import apiKey from "./apiKey"
 import axios from "axios"
+import {useLocation} from "react-router-dom"
 
 export default function Weather(){     
     // set weather to an empty struct
+    console.log(useLocation())
     const [weather,setWeather] = React.useState({})
     const [currSearch,setCurrSearch] = React.useState("");
 

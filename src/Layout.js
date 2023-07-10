@@ -1,44 +1,50 @@
-import React from "react"
-import {Outlet,NavLink} from "react-router-dom"
+import React, {useContext} from "react"
+import {Outlet,NavLink,useLocation} from "react-router-dom"
+import Footer from "./Footer.js"
+import {ThemeContext} from './Context.js';
 
 export default function Layout(){    
-    
+
+    const location=useLocation();
+    const {theme}=useContext(ThemeContext);
+
     return(
-        <div>
+        <div id="page" className={theme}>
             <nav className="nav--menu">
                 <NavLink
                     exact="true"
-                    to="/"
+                    to={{pathname:"/",state:{app:"Home"}}}
                     className="nav--menu-item"
-                    activeclassname="active"
+                    activeclassname="active"                    
                 >
                     Home
                 </NavLink>
                 <NavLink
                     to="/game"
                     className="nav--menu-item"
-                    activeclassname="active"
+                    activeclassname="active"                   
                 >
                     Game
                 </NavLink>
                 <NavLink
                     to="/notes"
                     className="nav--menu-item"
-                    activeclassname="active"
+                    activeclassname="active"                    
                 >
                     Notes
                 </NavLink>
                 <NavLink
                     to="/weather"
                     className="nav--menu-item"
-                    activeclassname="active"
+                    activeclassname="active"                    
                 >
                     Weather
                 </NavLink>
             </nav>
-            <main>
-                <Outlet />
-            </main>     
+            <main>                
+                <Outlet/>                
+            </main> 
+            <Footer currentPage={location.pathname} />            
         </div>
     )
 }

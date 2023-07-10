@@ -1,12 +1,16 @@
-import React from "react"
+import React, { useContext } from "react"
 import Die from "./Die"
 import {nanoid} from "nanoid"
 import Confetti from "react-confetti"
 import './game.css';
+import {ThemeContext } from '../../Context.js';
 
 export default function AppGame() {
     const [dice,setDice]=React.useState(allNewDice());
     const [tenzies,setTenzies]=React.useState(false);
+
+    const {theme} = useContext(ThemeContext);
+    const sectionClass=theme;
 
     function allNewDice(){
         const numbers = [];
@@ -67,7 +71,7 @@ export default function AppGame() {
     
     return (
         
-        <section id="main">
+        <section id="main" className={sectionClass}>
             <h1 className="title">Tenzies</h1>
             <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
             <section className="dice-container">                

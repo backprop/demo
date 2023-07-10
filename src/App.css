@@ -8,6 +8,14 @@ main{
     margin:10px;
 }
 
+main.light{
+  background-color: #8BA4C4;  
+}
+
+main.dark{
+  background-color: #304a6d;  
+}
+
 /* Styles for the navigation menu */
 .nav--menu {
   background-color: #8BA4C4;
@@ -33,4 +41,72 @@ main{
 
 .nav--menu-item.active {
   background-color: #5C7FAB;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;  
+  height: 60px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer.light{
+  background-color: #FFFFFF;
+}
+
+footer.dark{
+  background-color: #807c7c;
+}
+
+/* footer toggle */
+.switch-field {
+	display: flex;	
+	overflow: hidden;
+  float: right;
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #a5dc86;
+	box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
 }

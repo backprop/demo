@@ -13,13 +13,12 @@ button:focus {
     /* padding: 10px; */
 }
 
-section .notes--container{
-    height: 100vh;
+section.notes--container{
+    height: 90vh;
 }
 
 .sidebar {
     width: 20%;
-
     background-color: white;
 }
 
