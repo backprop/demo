@@ -13,7 +13,7 @@ export default function AppHome(){
                 Some concepts demonstrated:                   
             </p>
             <ul>
-                <li><strong>(General)</strong>: General React components, Router, Context, lazy instantiation</li>
+                <li><strong>(General)</strong>: General React components, Router, Context, lazy instantiation, Jest</li>
                 <li><strong>Game</strong>: State, Plugins, Webpack </li>
                 <li><strong>Notes</strong>: Firebase, react-split</li>
                 <li><strong>Weather</strong>: API (<em>Note</em> - API keys would normally be proxied and hidden but not done in this demo)</li>
